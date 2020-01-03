@@ -1,4 +1,7 @@
 spring:
+  cloud:
+    config:
+      override-none: true
   application:
     name: order-service
     
