@@ -4,7 +4,11 @@ spring:
       override-none: true
   application:
     name: order-service
-    
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin       
 server:
   port: 8201
  
@@ -18,8 +22,3 @@ feign:
     enabled: true
     
         
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
